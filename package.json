@@ -1,0 +1,42 @@
+{
+    "name": "byond-dm-language-support",
+    "displayName": "BYOND DM Language Support",
+    "description": "Adds support for .dm syntax highlighting.",
+    "version": "1.0.1",
+    "publisher": "gbasood",
+    "repository": {
+        "type": "github",
+        "url": "git@github.com:gbasood/vscode-atomic-dreams.git"
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "dm",
+                "aliases": [
+                    "DM (BYOND Code)",
+                    "dm",
+                    "byond"
+                ],
+                "extensions": [
+                    ".dm",
+                    ".dme",
+                    ".dmm"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dm",
+                "scopeName": "source.dm",
+                "path": "./syntaxes/dm.tmLanguage.json"
+            }
+        ]
+    }
+}
